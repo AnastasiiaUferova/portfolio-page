@@ -1,0 +1,30 @@
+@use "../index" as *;
+
+.header {
+    @include background-color(header);
+    @include font-color($headings-font-color);
+    @include fonts($main-font, 700);
+    display: flex;
+    font-size: 15px;
+    letter-spacing: 10px;
+
+    ul {
+        list-style: none;
+        display: flex;
+        gap: 10px;
+    }
+
+    a {
+        @include font-color($text-font-color);
+        @include fonts($main-font, 200);
+        font-size: 10px;
+        line-height: 7px;
+        letter-spacing: 1px;
+
+    }
+
+    button {
+        @include font-color($text-font-color)
+    }
+}
+

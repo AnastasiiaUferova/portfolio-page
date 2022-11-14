@@ -1,0 +1,22 @@
+$additional-color: #7E74F1;
+$text-font-color:#F1F1F1F1;
+$regular-text-font-color: rgba(241, 241, 241, 0.7);
+$headings-font-color: #FFFFFF;
+$sub-headings-font-color: #656D72;
+
+
+@mixin background-color($place) {
+    @if $place == footer {
+        background-color:#FFFFFF;
+    }
+    @else if $place == contacts {
+        background-color: #FBFBFB;
+    }
+    @else {
+        background-color:#1E1E1E;
+    }
+}
+
+@mixin font-color($color) {
+    color: $color;
+}
