@@ -1,0 +1,20 @@
+@use "../index" as *;
+
+a {
+    @include font-color($text-font-color);
+    @include fonts($main-font, 400);
+    font-size: 0.8em;
+    line-height: 7px;
+    letter-spacing: 1px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+
+button:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}

@@ -11,12 +11,48 @@
   box-sizing: border-box;
 }
 
+p, h1, h2, div, button {
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
 a {
   text-decoration: none;
   cursor: pointer;
 }
 
 a:hover {
+  opacity: 0.7;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+a {
+  color: rgba(241, 241, 241, 0.9450980392);
+  font-family: "Inter", "Open Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.8em;
+  line-height: 7px;
+  letter-spacing: 1px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+button:hover {
+  cursor: pointer;
   opacity: 0.7;
 }
 
@@ -29,13 +65,12 @@ a:hover {
   display: flex;
   font-size: 1em;
   letter-spacing: 10px;
-  padding: 2% 1.5%;
+  padding: 2% 2%;
 }
 .header p {
-  padding-top: 3px;
+  padding-top: 6px;
 }
 .header ul {
-  list-style: none;
   display: flex;
   gap: 3em;
   padding-top: 5px;
@@ -53,13 +88,9 @@ a:hover {
   color: rgba(241, 241, 241, 0.9450980392);
   background-color: transparent;
 }
-.header button:hover {
-  cursor: pointer;
-  opacity: 0.7;
-}
 .header button:nth-of-type(1) {
   height: 30px;
-  width: 30px;
+  width: 35px;
   background-size: cover;
   border: none;
   padding-bottom: 5px;
@@ -91,10 +122,17 @@ a:hover {
     font-size: 0.5em;
   }
   .header button:nth-of-type(2) {
+    display: none;
     padding: 0.3em 0.6em;
   }
   .header nav ul {
     display: none;
+  }
+  .header__button:nth-of-type(1) {
+    margin-right: 0;
+  }
+  .header__buttons {
+    margin-right: 0;
   }
   .header__menu {
     display: block;
@@ -102,22 +140,62 @@ a:hover {
     width: 25px;
     height: 30px;
     cursor: pointer;
+    margin-left: 10px;
+    z-index: 2;
   }
   .header__menu div {
-    background-color: white;
+    background-color: #F1F1F1;
     width: 100%;
     height: 3px;
     margin-top: 5px;
   }
-  .header__menu:active .one {
+  .header__menu_open .one {
     transform: translateY(8px) rotate(45deg);
   }
-  .header__menu:active .two {
+  .header__menu_open .two {
     opacity: 0;
   }
-  .header__menu:active .three {
+  .header__menu_open .three {
     transform: translateY(-8px) rotate(-45deg);
   }
+}
+/*&__button:nth-of-type(1) {
+    height: 30px;
+    width: 35px;
+}*/
+.menu__popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #1E1E1E;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 1;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 1s, opacity 0.5s linear;
+  display: flex;
+}
+.menu__popup li {
+  margin-top: 30%;
+}
+.menu__popup ul {
+  margin-bottom: 100%;
+}
+.menu__popup_button {
+  border-radius: 2.77px;
+  border: 0.35px solid #F1F1F1;
+  font-size: 0.8em;
+  background-color: transparent;
+  color: #F1F1F1;
+  padding: 0.5em 1em;
+}
+
+.menu__popup_opened {
+  visibility: visible;
+  opacity: 1;
 }
 
 /*# sourceMappingURL=style.css.map */
