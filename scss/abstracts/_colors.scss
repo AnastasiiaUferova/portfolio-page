@@ -4,6 +4,9 @@ $regular-text-font-color: rgba(241, 241, 241, 0.7);
 $headings-font-color: #FFFFFF;
 $sub-headings-font-color: #656D72;
 
+$background-dark:  #1E1E1E;
+$background-light: #FFFFFF;
+$background-grey: #FBFBFB; 
 
 @mixin background-color($place) {
     @if $place == footer {
@@ -17,6 +20,26 @@ $sub-headings-font-color: #656D72;
     }
 }
 
-@mixin font-color($color) {
-    color: $color;
+@function set-text-color($color) {
+    @if(lightness($color) > 70) {
+        @return #232E35;
+    } @else {
+        @return #F1F1F1F1;
+    }
 }
+
+
+/*@function set-text-color($color) {
+    @if(lightness($color) > 70) {
+        @return #232E35;
+    } @else {
+        @return #F1F1F1F1;
+    }
+}
+
+//Set background & text color
+
+@mixin set-background($color) {
+    background-color: $color;
+    color: set-text-color($color);
+} */

@@ -37,3 +37,13 @@ headerMenuButton.addEventListener("click", popupToggle)
 
 window.addEventListener("resize", resizeFunction);
 
+//Color-change
+
+const header = document.querySelector('.header')
+const colorSwitchButton = header.querySelector('.header__button_color')
+
+function toggleColor() {
+    colorSwitchButton.classList.toggle("header__button_color_type_grey")
+}
+
+colorSwitchButton.addEventListener("click",toggleColor);

@@ -1,11 +1,12 @@
 @use "../index" as *;
 
+
 .header {
-    @include background-color(header);
-    @include font-color($headings-font-color);
     @include fonts($main-font, 700);
+    color: set-text-color($background-light);
     display: flex;
     font-size: 1em;
+    background-color: $background-light;
     letter-spacing: 10px;
     padding: 2% 2%;
 
@@ -20,7 +21,6 @@
     }
 
     a {
-        @include font-color($text-font-color);
         @include fonts($main-font, 400);
         font-size: 0.8em;
         line-height: 7px;
@@ -28,22 +28,30 @@
     }
 
     button {
-        @include font-color($text-font-color);
+        color: $text-font-color;
         background-color: transparent;
     }
 
 
     button:nth-of-type(1) {
-        height: 30px;
+        height: 35px;
         width: 35px;
         background-size: cover;
         border: none;
         padding-bottom: 5px;
     }
 
-    &__button:nth-of-type(1) {
+    &__button_color {
         background-image: url('../images/moon-min.svg');
+        background-size: cover;
+        border: none;
+        padding-bottom: 5px;
     }
+
+    &__button_color_type_grey {
+        background-image: url('../images/frame.svg');
+    }
+
 
     button:nth-of-type(2) {
         border-radius: 2.77px;

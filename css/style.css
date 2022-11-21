@@ -36,14 +36,28 @@ a:hover {
   opacity: 0.7;
 }
 
+/*@function set-text-color($color) {
+    @if(lightness($color) > 70) {
+        @return #232E35;
+    } @else {
+        @return #F1F1F1F1;
+    }
+}
+
+//Set background & text color
+
+@mixin set-background($color) {
+    background-color: $color;
+    color: set-text-color($color);
+} */
 a {
-  color: rgba(241, 241, 241, 0.9450980392);
   font-family: "Inter", "Open Sans", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 0.8em;
   line-height: 7px;
   letter-spacing: 1px;
+  color: #232E35;
 }
 
 ul {
@@ -57,13 +71,13 @@ button:hover {
 }
 
 .header {
-  background-color: #1E1E1E;
-  color: #FFFFFF;
   font-family: "Inter", "Open Sans", sans-serif;
   font-weight: 700;
   font-style: normal;
+  color: #232E35;
   display: flex;
   font-size: 1em;
+  background-color: #FFFFFF;
   letter-spacing: 10px;
   padding: 2% 2%;
 }
@@ -76,7 +90,6 @@ button:hover {
   padding-top: 5px;
 }
 .header a {
-  color: rgba(241, 241, 241, 0.9450980392);
   font-family: "Inter", "Open Sans", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -89,14 +102,20 @@ button:hover {
   background-color: transparent;
 }
 .header button:nth-of-type(1) {
-  height: 30px;
+  height: 35px;
   width: 35px;
   background-size: cover;
   border: none;
   padding-bottom: 5px;
 }
-.header__button:nth-of-type(1) {
+.header__button_color {
   background-image: url("../images/moon-min.svg");
+  background-size: cover;
+  border: none;
+  padding-bottom: 5px;
+}
+.header__button_color_type_grey {
+  background-image: url("../images/frame.svg");
 }
 .header button:nth-of-type(2) {
   border-radius: 2.77px;
@@ -169,7 +188,7 @@ button:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #1E1E1E;
+  background-color: #FFFFFF;
   justify-content: center;
   flex-direction: column;
   z-index: 1;

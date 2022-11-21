@@ -1,11 +1,12 @@
 @use "../index" as *;
-
+$color: #1E1E1E;
+$color1: #FFFF;
 a {
-    @include font-color($text-font-color);
     @include fonts($main-font, 400);
     font-size: 0.8em;
     line-height: 7px;
     letter-spacing: 1px;
+    color: set-text-color($background-light);
 }
 
 ul {
