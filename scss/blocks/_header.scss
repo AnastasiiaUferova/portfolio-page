@@ -3,21 +3,18 @@
 
 .header {
     @include fonts($main-font, 700);
-    color: set-text-color($background-light);
+    color: set-text-color($background-dark);
     display: flex;
     font-size: 1em;
-    background-color: $background-light;
+    background-color: $background-dark;
     letter-spacing: 10px;
     padding: 2% 2%;
+    align-items: center;
 
-    p {
-        padding-top: 6px;
-    }
 
     ul {
         display: flex;
         gap: 3em;
-        padding-top: 5px;
     }
 
     a {
@@ -25,6 +22,7 @@
         font-size: 0.8em;
         line-height: 7px;
         letter-spacing: 1px;
+        color: set-text-color($background-dark);
     }
 
     button {
@@ -38,7 +36,7 @@
         width: 35px;
         background-size: cover;
         border: none;
-        padding-bottom: 5px;
+        padding-bottom: 8px;
     }
 
     &__button_color {
@@ -50,6 +48,11 @@
 
     &__button_color_type_grey {
         background-image: url('../images/frame.svg');
+    }
+
+    &__nav {
+        display: flex;
+        align-items: center;
     }
 
 
@@ -131,7 +134,22 @@
 
 }
 
-/*&__button:nth-of-type(1) {
-    height: 30px;
-    width: 35px;
-}*/
+.header__theme_light {
+    color: set-text-color($background-light);
+    background-color: $background-light;
+
+    a {
+        color: set-text-color($background-light);
+    }
+
+    button:nth-of-type(2) {
+        border: 1px solid #B7B7B7;
+    }
+
+.header__menu {
+    div  {
+            background-color: $background-dark;
+        }
+}
+    
+}

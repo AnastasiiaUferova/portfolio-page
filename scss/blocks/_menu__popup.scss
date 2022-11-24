@@ -6,7 +6,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: $background-light;
+    background-color: $background-dark;
     justify-content: center;
     flex-direction: column;
     z-index: 1;
@@ -21,20 +21,43 @@
 
     ul {
         margin-bottom: 100%;
+        gap: 3em;
+
     }
 
     &_button {
         border-radius: 2.77px;
-        border: 0.35px solid #F1F1F1;
+        border: 1px solid #F1F1F1;
         font-size: 0.8em;
         background-color: transparent;
-       // color: set-text-color(#F1F1F1);
         color: #F1F1F1;
         padding: 0.5em 1em;
+    }
+
+    a {
+        @include fonts($main-font, 400);
+        font-size: 0.8em;
+        line-height: 7px;
+        letter-spacing: 1px;
+        color: set-text-color($background-dark);
     }
 }
 
 .menu__popup_opened{
     visibility: visible;
     opacity: 1;
+}
+
+.menu__popup_theme_light {
+    color: set-text-color($background-light);
+    background-color: $background-light;
+
+    a {
+        color: set-text-color($background-light);
+    }
+
+    &_button  {
+        border: 1px solid #B7B7B7;
+    
+    }
 }

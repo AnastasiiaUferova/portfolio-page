@@ -43,7 +43,9 @@ const header = document.querySelector('.header')
 const colorSwitchButton = header.querySelector('.header__button_color')
 
 function toggleColor() {
-    colorSwitchButton.classList.toggle("header__button_color_type_grey")
+    colorSwitchButton.classList.toggle("header__button_color_type_grey");
+    header.classList.toggle("header__theme_light");
+    headerMenuPopup.classList.toggle("menu__popup_theme_light");
 }
 
 colorSwitchButton.addEventListener("click",toggleColor);
