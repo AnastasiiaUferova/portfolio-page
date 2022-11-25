@@ -1,0 +1,207 @@
+@use "../index" as *;
+
+.about-me {
+    color: set-text-color($background-dark);
+    display: flex;
+    font-size: 1em;
+    background-color: $background-dark;
+    padding: 8% 4%;
+    align-items: center;
+    justify-content: space-between;
+
+    &__links {
+        margin-top: 20px;
+        width: 90px;
+        margin-left: -25px;
+
+        .about-me__link-image {
+            width: 40px;
+            height: 40px;
+            position: relative;
+        }
+    }
+
+
+    &__link {
+        font-size: 0em !important;
+        width: 0;
+    }
+
+
+    h1:after {
+        content: " Iuferova";
+        color: $additional-color;
+    }
+
+    &__image {
+        position: relative;
+        width: 50vw;
+        height: 400px;
+    }
+
+    &__decor {
+        background-color: $additional-color;
+        height: 350px;
+        width: 300px;
+        border-radius: 8px;
+        transform: rotate(-10deg);
+        position: absolute;
+        left: 28%;
+    }
+
+    img {
+        height: 350px;
+        width: 300px;
+        border-radius: 8px;
+        position: absolute;
+        z-index:1;
+        left: 28%;
+        object-fit: cover;
+    }
+
+    &__image:hover {
+        transform: scale(1.2);
+        transition: transform ease-in-out 200ms;
+    }
+
+    img:hover {
+        cursor: pointer;
+        transform: rotate(10deg);
+        transition: transform ease-in-out 200ms;
+    }
+
+    &__content {
+        width: 40vw;
+        p {
+            @include fonts($main-font, 400);
+            font-size: 15px;
+            line-height: 30px;
+            color: rgba(241, 241, 241, 0.7);
+            margin-top: 20px;
+        }
+    }
+}
+
+
+
+@media (max-width: 900px) {
+
+    .about-me {
+
+        &__content 
+        {
+            width: 50vw;
+        }
+    
+        p {
+            font-size: 10px;
+            line-height: 20px;
+        }
+
+        &__image {
+            width: 50vw;
+            height: 300px;
+        }
+    
+        &__decor {
+            height: 300px;
+            width: 250px;
+            left: 20%;
+        }
+    
+        img {
+            height: 300px;
+            width: 250px;
+            left: 20%;
+        }
+    }
+}
+
+
+@media (max-width: 680px) {
+    .about-me {
+
+    &__image {
+        width: 60vw;
+        height: 250px;
+    }
+
+    &__decor {
+        height: 250px;
+        width: 200px;
+        left: 30%;
+    }
+
+    img {
+        height: 250px;
+        width: 200px;
+        left: 30%;
+    }
+}
+}
+
+@media (max-width: 560px) {
+    .about-me {
+
+    &__image {
+        width: 70vw;
+        height: 250px;
+    }
+
+    &__decor {
+        height: 220px;
+        width: 170px;
+        
+    }
+
+    img {
+        height: 220px;
+        width: 170px;
+       
+    }
+}
+}
+
+@media (max-width: 500px) {
+    .about-me {
+       flex-direction: column;
+       gap: 40px;
+       padding: 10% 4%;
+
+
+       &__links {
+        margin-left: 0;
+       }
+
+       &__content  {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       }
+
+       p {
+        width: 90%;
+       }
+
+       &__image {
+        width: 40vw;
+    }
+
+        &__decor {
+        left: -5%;
+    }
+
+        img {
+         left: -5%;
+    }
+    }
+}
+
+.about-me_theme_light {
+    p {
+        color: set-text-color($background-light);
+    }
+    color: set-text-color($background-light);
+    background-color: $background-light;
+}

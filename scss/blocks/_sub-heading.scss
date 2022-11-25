@@ -1,0 +1,28 @@
+@use "../index" as *;
+
+.sub-heading {
+    @include fonts($main-font, 500);
+    text-transform: uppercase;
+    color: #656D72;
+    letter-spacing: 10px;
+    font-size: 10px;
+    margin-left: 10px;
+    position: relative;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+
+.sub-heading::before {
+    content: url(../../images/Above\ title\ line.svg);
+    position: absolute;
+    margin-left: -15px;
+    bottom: 4px;
+
+}
+
+
+@media(max-width: 500px) {
+    .sub-heading {
+        margin-top: 20px;
+       }
+}

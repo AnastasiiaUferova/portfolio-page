@@ -41,11 +41,35 @@ window.addEventListener("resize", resizeFunction);
 
 const header = document.querySelector('.header')
 const colorSwitchButton = header.querySelector('.header__button_color')
+const aboutMe = document.querySelector('.about-me');
+const skills = document.getElementById("skills");
 
 function toggleColor() {
     colorSwitchButton.classList.toggle("header__button_color_type_grey");
     header.classList.toggle("header__theme_light");
     headerMenuPopup.classList.toggle("menu__popup_theme_light");
+    aboutMe.classList.toggle("about-me_theme_light");
+    skills.classList.toggle("about-me_theme_light");
 }
 
 colorSwitchButton.addEventListener("click",toggleColor);
+
+
+//cloud settings
+
+const myTags = [
+    'JavaScript', 'CSS', 'HTML',
+    'React.js',
+    'express.js', 'git',
+    'Node.js', 'Figma',
+    'SASS', 'MongoDB', 'REST API', "responsive design", "VSCode", "English", "npm", "React Router", "CRUD"
+];
+
+const tagCloud = TagCloud('.cloud', myTags,{
+
+  radius: 250,
+  maxSpeed: 'fast',
+  initSpeed: "normal",
+  direction: 135,
+  keep: true
+});

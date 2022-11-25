@@ -19,18 +19,3 @@
     font-weight: 700;
     src: url("./Inter-Bold.ttf") format("ttf");
   }
-
-  @font-face {
-    font-family: "Plus Jakarta Sans";
-    font-style:  normal;
-    font-weight: 700;
-    src: url("./PlusJakartaSans-Bold.ttf") format("ttf");
-  }
-
-  @font-face {
-    font-family: "Plus Jakarta Sans";
-    font-style: normal;
-    font-weight: 500;
-    src: url("./PlusJakartaSans-Medium.ttf") format("ttf");
-  }
-  
