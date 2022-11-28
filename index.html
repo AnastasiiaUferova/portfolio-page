@@ -16,9 +16,9 @@
         </div>
         <nav class="header__nav">
             <ul>
-                <li><a href="#">About me</a></li>
-                <li class="header__nav-item"><a href="#">Skills</a></li>
-                <li class="header__nav-item"><a href="#">Projects</a></li>
+                <li><a href="#me">About me</a></li>
+                <li class="header__nav-item"><a href="#skills">Skills</a></li>
+                <li class="header__nav-item"><a href="#projects">Projects</a></li>
             </ul>
         </nav>
         <div class="header__buttons">
@@ -32,7 +32,7 @@
             <div class="three"></div>
         </button>
     </header>
-
+    <main>
     <section id="me" class="about-me">
         <div class="about-me__content">
             <h3 class="sub-heading">My name is</h3>
@@ -60,27 +60,58 @@
         <span class="cloud"></span>
         <div class="about-me__content">
             <h3 class="sub-heading">Skills</h3>
-            <h2>Main Techs & Skills</h2>
-            <p>Creative junior front-end developer with more than 1 year of studying + pet projects experience. Previously, worked in marketing and SMM for several years. Familiar with both front-end and backend technologies. 
-                Passionate about web development and photography.</p>
+            <h2>Main Techs <span style="color:#7E74F1">&</span> Skills</h2>
+            <p>Here are the main skills I've aquired so far from courses (Yandex.Practicum, Freecodecamp, Udemy), YouTube videos 
+                (Programming with Mosh, Web Dev Simplified, Kevin Powell, Traversy Media) and documentation platforms (MDN Web Docs, W3schools.com).
+            </p>
         </div>
+    </section>
+
+    <section id="projects" class="about-me">
+        <div class="about-me__content">
+            <h3 class="sub-heading">Projects</h3>
+            <h2>My Featured <span style="color:#7E74F1">Projects</span></h2>
+            <p>Here are my educational projects from courses and my pet projects.
+            </p>
+        </div>
+<div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide">Slide 1</div>
+      <div class="swiper-slide">Slide 2</div>
+      <div class="swiper-slide">Slide 3</div>
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+  </div>
     </section>
 
 
     <section class="menu__popup">
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About me</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Projects</a></li>
+                <li><a href="#me">About me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
             </ul>
             <button class="menu__popup_button"><a href="./Anastasiia_Iuferova_JunFrontendDev.pdf" class="header__link" download>Resume</a></button>
         </nav>
 
     </section>
     <script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="scripts/cloud.js"></script>
     <script src="scripts/index.js"></script>
+
+</main>
 </body>
 </html>
 

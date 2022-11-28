@@ -53,23 +53,3 @@ function toggleColor() {
 }
 
 colorSwitchButton.addEventListener("click",toggleColor);
-
-
-//cloud settings
-
-const myTags = [
-    'JavaScript', 'CSS', 'HTML',
-    'React.js',
-    'express.js', 'git',
-    'Node.js', 'Figma',
-    'SASS', 'MongoDB', 'REST API', "responsive design", "VSCode", "English", "npm", "React Router", "CRUD"
-];
-
-const tagCloud = TagCloud('.cloud', myTags,{
-
-  radius: 250,
-  maxSpeed: 'fast',
-  initSpeed: "normal",
-  direction: 135,
-  keep: true
-});

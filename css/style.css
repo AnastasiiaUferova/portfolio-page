@@ -48,7 +48,7 @@ button:hover {
 h1, h2 {
   font-family: "Plus Jakarta Sans";
   font-weight: 700;
-  letter-spacing: normal;
+  letter-spacing: 0.1em;
 }
 
 h1 {
@@ -56,7 +56,7 @@ h1 {
 }
 
 @media (max-width: 500px) {
-  h1 {
+  h1, h2 {
     margin-top: 10px;
   }
 }
@@ -444,16 +444,13 @@ h1 {
     margin-top: 20px;
   }
 }
-body {
-  background-color: #000;
-}
-
 .tagcloud {
   font-family: "Poppins", sans-serif;
   font-size: 20px;
   margin: auto;
   width: 50%;
   color: #7E74F1;
+  z-index: 0;
 }
 
 .tagcloud--item:hover {
@@ -462,7 +459,55 @@ body {
 }
 
 #skills {
-  padding-top: 0;
+  padding-top: 10px;
+}
+
+@media (max-width: 900px) {
+  #skills {
+    flex-direction: column-reverse;
+  }
+  #skills .about-me__content {
+    width: 70%;
+    align-self: flex-start;
+  }
+}
+@media (max-width: 500px) {
+  #skills {
+    padding-top: 30px;
+  }
+  #skills .about-me__content {
+    width: 100%;
+    align-self: center;
+    margin-bottom: 10px;
+  }
+}
+#projects {
+  padding-top: 10px;
+  flex-direction: column;
+}
+#projects .about-me__content {
+  width: 70%;
+  align-self: flex-start;
+}
+
+@media (max-width: 900px) {
+  #projects {
+    flex-direction: column-reverse;
+  }
+  #projects .about-me__content {
+    width: 70%;
+    align-self: flex-start;
+  }
+}
+@media (max-width: 500px) {
+  #projects {
+    padding-top: 30px;
+  }
+  #projects .about-me__content {
+    width: 100%;
+    align-self: center;
+    margin-bottom: 10px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

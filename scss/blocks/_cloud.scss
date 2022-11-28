@@ -1,9 +1,6 @@
 @use "../index" as *;
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-body {
-  background-color: #000
-}
 
 .tagcloud {
     font-family: 'Poppins', sans-serif;  
@@ -11,8 +8,11 @@ body {
     margin: auto;
     width: 50%;
     color: $additional-color;
+    z-index: 0;
   }
   .tagcloud--item:hover {
     color: #36454F;
     cursor: pointer;
   }
+
+

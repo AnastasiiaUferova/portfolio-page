@@ -1,9 +1,15 @@
-#skills {
+#projects {
     padding-top: 10px;
+    flex-direction: column;
+
+    .about-me__content {
+        width: 70%;
+        align-self: flex-start;
+    }
 }
 
 @media (max-width: 900px) {
-    #skills {
+    #projects {
         flex-direction: column-reverse;
 
         .about-me__content {
@@ -15,7 +21,7 @@
 
 
 @media (max-width: 500px) {
-    #skills {
+    #projects {
         padding-top: 30px;
 
         .about-me__content {
@@ -23,5 +29,6 @@
             align-self: center;
             margin-bottom: 10px;
         }
+
     }
 }
