@@ -1,3 +1,8 @@
+import { initialProjectCards, projectSwiperSelector } from "../utils/constants.js";
+import { ProjectCard } from "../components/projectCard.js";
+import SwiperSection from "../components/swiperSection.js";
+
+
 //Constants
 
 const headerMenuButton = document.getElementsByClassName("header__menu")[0];
@@ -53,3 +58,50 @@ function toggleColor() {
 }
 
 colorSwitchButton.addEventListener("click",toggleColor);
+
+
+//Swiper
+
+
+// Project Section: swiper + cards rendering
+const projectCardList = new SwiperSection(
+  {
+    items: initialProjectCards,
+    renderer: (item) => {
+      const projectCard = new ProjectCard(item, ".project-card-template");
+      const projectCardElement = projectCard.generateCard();
+      projectCardList.addItem(projectCardElement);
+    },
+  },
+  projectSwiperSelector
+);
+
+projectCardList.renderItems();
+
+
+
+new Swiper(".swiper", {
+    loop: true,
+    spaceBetween: 8,
+    slidesPerView: "auto",
+    watchSlidesVisibility: true,
+    watchOverflow: true,
+    pagination: {
+      el: ".project__pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".project__navigation_type_next",
+      prevEl: ".project__navigation_type_prev",
+    },
+    breakpoints: {
+      768: {
+        spaceBetween: 30,
+        slidesPerView: "auto",
+      },
+      1282: {
+        loop: false,
+        spaceBetween: 30,
+      },
+    },
+  });

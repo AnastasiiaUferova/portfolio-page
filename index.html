@@ -74,26 +74,36 @@
             <p>Here are my educational projects from courses and my pet projects.
             </p>
         </div>
-<div class="swiper">
-    <!-- Additional required wrapper -->
-    <div class="swiper-wrapper">
-      <!-- Slides -->
-      <div class="swiper-slide">Slide 1</div>
-      <div class="swiper-slide">Slide 2</div>
-      <div class="swiper-slide">Slide 3</div>
-    </div>
-    <!-- If we need pagination -->
-    <div class="swiper-pagination"></div>
-  
-    <!-- If we need navigation buttons -->
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
-  
-    <!-- If we need scrollbar -->
-    <div class="swiper-scrollbar"></div>
-  </div>
+
+        <div class="project__navigation project__navigation_type_next swiper-button-next"></div>
+        <div class="project__navigation project__navigation_type_prev swiper-button-prev"></div>
+
+        <div class="project__slider swiper">
+            <div class="project__wrapper swiper-wrapper"></div>
+            <div class="project__pagination swiper-pagination"></div>
+          </div>
+
+
     </section>
 
+
+    <template class="project-card-template">
+        <div class="swiper-slide">
+            <img src="" alt="" class="slide-image">
+            <div class="slide-content">
+             <h4 class="slide-header">Website</h4>
+             <div class="slide-info">
+                 <p class="slide-techs"></p>
+                 <a href="https://www.linkedin.com/in/anastasiia-iuferova-frontend-dev/" target="_blank" class="slide__link_repo">
+                     <img alt="icon LN" class="slide__link-image" src="/images/Linkedin-grey.svg">
+                 </a>
+                 <a href="https://www.linkedin.com/in/anastasiia-iuferova-frontend-dev/" target="_blank" class="slide__link_web">
+                     <img alt="icon LN" class="slide__link-image" src="/images/Linkedin-grey.svg">
+                 </a>
+             </div>
+            </div>
+           </div>
+      </template>
 
     <section class="menu__popup">
         <nav>
@@ -108,18 +118,10 @@
     </section>
     <script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-    <script src="scripts/cloud.js"></script>
-    <script src="scripts/index.js"></script>
+    <script src="./components/cloud.js"></script>
+    <script type="module" src="/pages/index.js"></script>
 
 </main>
 </body>
 </html>
-
-
-
-
-
-
-
-
 
