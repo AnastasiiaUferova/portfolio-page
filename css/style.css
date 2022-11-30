@@ -484,6 +484,7 @@ h1 {
 #projects {
   padding-top: 10px;
   flex-direction: column;
+  position: relative;
 }
 #projects .about-me__content {
   width: 70%;
@@ -492,7 +493,7 @@ h1 {
 
 @media (max-width: 900px) {
   #projects {
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
   #projects .about-me__content {
     width: 70%;
@@ -507,6 +508,116 @@ h1 {
     width: 100%;
     align-self: center;
     margin-bottom: 10px;
+  }
+}
+.swiper {
+  width: 90%;
+  height: 400px;
+  margin-top: 5%;
+  font-family: "Plus Jakarta Sans";
+  font-weight: 500;
+}
+
+.swiper-wrapper {
+  height: 90% !important;
+}
+
+.swiper-slide {
+  font-size: 18px;
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  border-radius: 10px;
+}
+
+.swiper-pagination {
+  padding-top: 100px !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #7E74F1 !important;
+}
+
+.swiper-pagination > .swiper-pagination-bullet {
+  opacity: 0.7;
+  background-color: #656D72;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+  left: auto;
+  position: static;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  transform: none !important;
+}
+
+.swiper-button-next, .swiper-rtl .swiper-button-prev {
+  color: white !important;
+}
+
+.swiper-button-prev, .swiper-rtl .swiper-button-next {
+  color: white !important;
+}
+
+.slide-content {
+  display: flex;
+  color: black;
+  width: 100%;
+  flex-direction: column;
+  padding: 20px;
+}
+.slide-content h4 {
+  margin: 0;
+}
+
+.slide-info {
+  padding-top: 15px;
+  display: flex;
+  align-items: center;
+}
+.slide-info a {
+  padding-left: 10px;
+  font-size: 0em !important;
+  cursor: pointer;
+}
+
+.slide__link-image {
+  width: 25px !important;
+  height: 25px !important;
+}
+
+.slide-techs {
+  font-family: "Inter", sans-serif;
+  font-weight: 200;
+  padding: 3px;
+  border: 1px solid rgba(101, 109, 114, 0.5);
+  display: inline;
+  border-radius: 3px;
+  color: #656D72;
+  font-size: 12px;
+}
+
+.slide-link-container {
+  margin-left: 5px;
+  position: static;
+}
+
+@media (max-width: 500px) {
+  h4 {
+    font-size: 15px;
+  }
+  .slide-techs {
+    width: auto !important;
+  }
+  .slide__link-image {
+    width: 20px !important;
+    height: 20px !important;
   }
 }
 

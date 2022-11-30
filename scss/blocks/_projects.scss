@@ -1,16 +1,19 @@
 #projects {
     padding-top: 10px;
     flex-direction: column;
+    position: relative;
 
     .about-me__content {
         width: 70%;
         align-self: flex-start;
     }
+
 }
+
 
 @media (max-width: 900px) {
     #projects {
-        flex-direction: column-reverse;
+        flex-direction: column;
 
         .about-me__content {
             width: 70%;

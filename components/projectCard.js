@@ -28,3 +28,4 @@ export class ProjectCard {
       return this._element;
     }
   }
+

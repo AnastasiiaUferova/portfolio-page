@@ -79,7 +79,7 @@ const projectCardList = new SwiperSection(
 projectCardList.renderItems();
 
 
-
+/*
 new Swiper(".swiper", {
     loop: true,
     spaceBetween: 8,
@@ -94,6 +94,11 @@ new Swiper(".swiper", {
       nextEl: ".project__navigation_type_next",
       prevEl: ".project__navigation_type_prev",
     },
+  
+  });
+
+
+  /*
     breakpoints: {
       768: {
         spaceBetween: 30,
@@ -104,4 +109,62 @@ new Swiper(".swiper", {
         spaceBetween: 30,
       },
     },
-  });
+    */
+
+
+ 
+      // Swiper: Slider
+      const swiper = new Swiper('.mySwiper', {
+              lazy: true,
+              direction: "horizontal",
+              navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+              },
+              paginationClickable: true,
+              pagination: {
+                el: ".swiper-pagination",
+              },
+              scrollbar: {
+                el: ".swiper-scrollbar",
+                hide: true,
+              },
+              spaceBetween: 20,
+              breakpoints: {
+                  1920: {
+                      slidesPerView: 3,
+                      spaceBetween: 30
+                  },
+                  1028: {
+                      slidesPerView: 3,
+                      spaceBetween: 30
+                  },
+                  480: {
+                      slidesPerView: 1,
+                      spaceBetween: 10
+                  }
+              }
+          });
+
+
+// Now you can use all slider methods like
+swiper.slideNext();
+      
+
+console.log(swiper)
+
+
+
+
+/*var swiper = new Swiper(".mySwiper", {
+    spaceBetween: 30,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+      el: ".swiper-pagination",
+    },
+    mousewheel: true,
+    keyboard: true,
+  });*/

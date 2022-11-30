@@ -24,7 +24,7 @@ const initialProjectCards = [
       },
       {
         header: "‘How to learn’ landing page",  
-        techs: "JS, HTML5 CSS3",
+        techs: "JS, HTML5, CSS3",
         repoLink: "https://github.com/AnastasiiaUferova/how-to-learn",
         webLink: "https://anastasiiauferova.github.io/how-to-learn/index.html ", 
         imgLink: "../../images/HowToLearn.png"
@@ -34,12 +34,12 @@ const initialProjectCards = [
         techs: "React.js, JS, SCSS",
         repoLink: "https://github.com/AnastasiiaUferova/portfolio-page",
         webLink: "anastasiiauferova.github.io/react-mesto-auth", 
-        imgLink: "../../images/Mesto.png"
+        imgLink: "../../images/Portfolio.png"
       },
    
   ];
   
-  const projectSwiperSelector = document.querySelector(".project__wrapper");
+  const projectSwiperSelector = document.querySelector(".swiper-wrapper");
   
   export {initialProjectCards, projectSwiperSelector};
 

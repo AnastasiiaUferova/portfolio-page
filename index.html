@@ -6,10 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <link href='https://fonts.googleapis.com/css?family=Plus Jakarta Sans' rel='stylesheet'>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+  />
     <title>Anastasiia Portfolio
     </title>
 </head>
 <body>
+
     <header class="header">
         <div class="logo">
             <p>ANASTASIIA</p>
@@ -75,17 +80,21 @@
             </p>
         </div>
 
-        <div class="project__navigation project__navigation_type_next swiper-button-next"></div>
-        <div class="project__navigation project__navigation_type_prev swiper-button-prev"></div>
-
-        <div class="project__slider swiper">
-            <div class="project__wrapper swiper-wrapper"></div>
-            <div class="project__pagination swiper-pagination"></div>
+       
+        
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
           </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        
 
 
     </section>
 
+ 
+    </main>
 
     <template class="project-card-template">
         <div class="swiper-slide">
@@ -94,16 +103,19 @@
              <h4 class="slide-header">Website</h4>
              <div class="slide-info">
                  <p class="slide-techs"></p>
-                 <a href="https://www.linkedin.com/in/anastasiia-iuferova-frontend-dev/" target="_blank" class="slide__link_repo">
-                     <img alt="icon LN" class="slide__link-image" src="/images/Linkedin-grey.svg">
+                 <div class="slide-link-container">
+                 <a href="" target="_blank" class="slide__link_repo">
+                     <img alt="icon LN" class="slide__link-image" src="/images/Github-grey.svg">
                  </a>
-                 <a href="https://www.linkedin.com/in/anastasiia-iuferova-frontend-dev/" target="_blank" class="slide__link_web">
-                     <img alt="icon LN" class="slide__link-image" src="/images/Linkedin-grey.svg">
+                 <a href="" target="_blank" class="slide__link_web">
+                     <img alt="icon LN" class="slide__link-image" src="/images/Link-min.svg">
                  </a>
-             </div>
+                </div>
             </div>
+    
            </div>
       </template>
+
 
     <section class="menu__popup">
         <nav>
@@ -114,14 +126,32 @@
             </ul>
             <button class="menu__popup_button"><a href="./Anastasiia_Iuferova_JunFrontendDev.pdf" class="header__link" download>Resume</a></button>
         </nav>
-
     </section>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"></script>
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="./components/cloud.js"></script>
     <script type="module" src="/pages/index.js"></script>
 
 </main>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
