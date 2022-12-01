@@ -79,40 +79,6 @@ const projectCardList = new SwiperSection(
 projectCardList.renderItems();
 
 
-/*
-new Swiper(".swiper", {
-    loop: true,
-    spaceBetween: 8,
-    slidesPerView: "auto",
-    watchSlidesVisibility: true,
-    watchOverflow: true,
-    pagination: {
-      el: ".project__pagination",
-      clickable: true,
-    },
-    navigation: {
-      nextEl: ".project__navigation_type_next",
-      prevEl: ".project__navigation_type_prev",
-    },
-  
-  });
-
-
-  /*
-    breakpoints: {
-      768: {
-        spaceBetween: 30,
-        slidesPerView: "auto",
-      },
-      1282: {
-        loop: false,
-        spaceBetween: 30,
-      },
-    },
-    */
-
-
- 
       // Swiper: Slider
       const swiper = new Swiper('.mySwiper', {
               lazy: true,
@@ -121,26 +87,31 @@ new Swiper(".swiper", {
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
               },
-              paginationClickable: true,
               pagination: {
                 el: ".swiper-pagination",
+                clickable: true,
               },
               scrollbar: {
                 el: ".swiper-scrollbar",
                 hide: true,
               },
+
+              keyboard: {
+                enabled: true,
+                onlyInViewport: false,
+              },
               spaceBetween: 20,
               breakpoints: {
-                  1920: {
-                      slidesPerView: 3,
-                      spaceBetween: 30
-                  },
-                  1028: {
+                1440: {
+                  slidesPerView: 4,
+                },
+
+                  1000: {
                       slidesPerView: 3,
                       spaceBetween: 30
                   },
                   480: {
-                      slidesPerView: 1,
+                      slidesPerView: 2,
                       spaceBetween: 10
                   }
               }
