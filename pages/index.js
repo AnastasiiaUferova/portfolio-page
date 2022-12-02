@@ -48,6 +48,7 @@ const header = document.querySelector('.header')
 const colorSwitchButton = header.querySelector('.header__button_color')
 const aboutMe = document.querySelector('.about-me');
 const skills = document.getElementById("skills");
+const projects = document.getElementById("projects");
 
 function toggleColor() {
     colorSwitchButton.classList.toggle("header__button_color_type_grey");
@@ -55,6 +56,8 @@ function toggleColor() {
     headerMenuPopup.classList.toggle("menu__popup_theme_light");
     aboutMe.classList.toggle("about-me_theme_light");
     skills.classList.toggle("about-me_theme_light");
+    projects.classList.toggle("about-me_theme_light");
+
 }
 
 colorSwitchButton.addEventListener("click",toggleColor);
@@ -79,7 +82,7 @@ const projectCardList = new SwiperSection(
 projectCardList.renderItems();
 
 
-      // Swiper: Slider
+// Swiper settings
       const swiper = new Swiper('.mySwiper', {
               lazy: true,
               direction: "horizontal",
@@ -110,32 +113,9 @@ projectCardList.renderItems();
                       slidesPerView: 3,
                       spaceBetween: 30
                   },
-                  480: {
+                  600: {
                       slidesPerView: 2,
                       spaceBetween: 10
                   }
               }
           });
-
-
-// Now you can use all slider methods like
-swiper.slideNext();
-      
-
-console.log(swiper)
-
-
-
-
-/*var swiper = new Swiper(".mySwiper", {
-    spaceBetween: 30,
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    pagination: {
-      el: ".swiper-pagination",
-    },
-    mousewheel: true,
-    keyboard: true,
-  });*/

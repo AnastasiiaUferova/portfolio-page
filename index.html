@@ -24,6 +24,7 @@
                 <li><a href="#me">About me</a></li>
                 <li class="header__nav-item"><a href="#skills">Skills</a></li>
                 <li class="header__nav-item"><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
         <div class="header__buttons">
@@ -88,8 +89,49 @@
           <div class="swiper-button-prev"></div>
     </section>
     
+
+<section id="contact" class="about-me">
+<div class="about-me__content">
+    <h3 class="sub-heading">Contact</h3>
+    <h2>Contact <span style="color:#7E74F1">Me</span></h2>
+</div>
+<div class="all-contacts">
+    <div class="form-container">
+        <form  action="https://formspree.io/f/mqkjvnjw"
+        method="POST" id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/{form_id}" method="post">
+            <fieldset id="fs-frm-inputs">
+              <input type="text" name="name" id="full-name" placeholder="Name" required="">
+              <input type="email" name="_replyto" id="email-address" placeholder="Email" required="">
+              <textarea rows="5" name="message" id="message" placeholder="Message" required=""></textarea>
+              <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+            </fieldset>
+            <input  class="submit" type="submit" value="Submit">
+          </form>
+    </div>
+    <div class="contact-info">
+
+        <div class="info-container">
+            <h4>Email</h4>
+            <p class="info-content">anastasiia.iuferova@gmail.com</p>
+        </div>
+
+        <div class="info-container">
+            <h4>Phone number</h4>
+            <p class="info-content">+48 501 067 105</p>
+        </div>
+
+        <div class="info-container">
+            <h4>Address</h4>
+            <p class="info-content">Warsaw, Grzybowska</p>
+        </div>
+    </div>
+</div>
+</section>
+
+</main>
+ </body>
  
-    </main>
+   
 
     <template class="project-card-template">
         <div class="swiper-slide">
@@ -120,6 +162,7 @@
                 <li><a href="#me">About me</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
             <button class="menu__popup_button"><a href="./Anastasiia_Iuferova_JunFrontendDev.pdf" class="header__link" download>Resume</a></button>
         </nav>

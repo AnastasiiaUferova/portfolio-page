@@ -165,7 +165,7 @@
 @media (max-width: 500px) {
     .about-me {
        flex-direction: column;
-       gap: 40px;
+       gap: 15px;
        padding: 10% 4%;
 
 
@@ -204,4 +204,8 @@
     }
     color: set-text-color($background-light);
     background-color: $background-light;
+
+    .swiper-slide {
+        border: 0.5px solid rgba(101,109,114,0.5);
+    }
 }

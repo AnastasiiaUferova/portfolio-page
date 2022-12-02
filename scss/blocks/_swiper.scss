@@ -3,9 +3,10 @@
 .swiper {
     width: 90%;
     height: 400px;
-    margin-top: 5%;
     font-family: 'Plus Jakarta Sans';
     font-weight: 500;
+    margin-top: 22px;
+    border-radius: 10px !important;
   }
 
   .swiper-wrapper {
@@ -14,11 +15,13 @@
 
   .swiper-slide {
     font-size: 18px;
-    background-color: aliceblue;
+    background-color: white;
     display: flex;
     flex-direction: column;
     padding: 0;
-    border-radius: 10px;
+    border-radius: 10px !important;
+
+
   }
 
   .swiper-pagination {
@@ -48,6 +51,10 @@
   background-color:  rgba(0, 0, 0, 0.5);
   left: 0;
   top: 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
   .swiper-slide img{
@@ -101,7 +108,7 @@
         font-family: "Inter", sans-serif;
         font-weight: 200;
         padding: 3px;
-        border: 1px solid rgba(101,109,114,0.5);
+        border: 0.7px solid rgba(101,109,114,0.5);
         display: inline;
         border-radius: 3px;
         color:  #656D72;
@@ -132,6 +139,12 @@
 
 
     @media (max-width: 500px){
+
+      .swiper {
+
+        margin-top: 10px;
+
+      }
 
         h4 {
             font-size: 15px;
