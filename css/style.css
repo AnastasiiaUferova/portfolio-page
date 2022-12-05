@@ -796,10 +796,12 @@ h1 {
   }
 }
 .footer {
-  background-color: FFFFFF;
+  background-color: #EEEEEE;
   width: 100vw;
   display: flex;
   justify-content: center;
+  padding-top: 120px;
+  padding-bottom: 50px;
 }
 .footer img {
   width: 40px;
@@ -807,6 +809,10 @@ h1 {
 }
 
 @media (max-width: 600px) {
+  .footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
   .footer img {
     width: 20px;
     margin: 15px;

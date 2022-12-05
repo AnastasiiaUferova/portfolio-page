@@ -1,8 +1,10 @@
 .footer {
-   background-color: FFFFFF; 
+   background-color: #EEEEEE;
    width: 100vw;
    display: flex;
    justify-content: center;
+   padding-top: 120px;
+   padding-bottom: 50px;
 
 
    img {
@@ -13,6 +15,8 @@
 
 @media (max-width: 600px) {
     .footer {
+        padding-top: 50px;
+        padding-bottom: 50px;
         img {
             width: 20px;
             margin: 15px;
