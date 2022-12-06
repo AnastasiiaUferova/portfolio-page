@@ -10,7 +10,7 @@ const initialProjectCards = [
         header: "Portfolio Page",  
         techs: "React.js, JS, SCSS",
         repoLink: "https://github.com/AnastasiiaUferova/portfolio-page",
-        webLink: "https://portfolio-page-8x3v.vercel.app/", 
+        webLink: "https://portfolio-page-8x3v-hi4hk8i2u-anastasiiauferova.vercel.app", 
         imgLink: portfolioImage,
       },
   
