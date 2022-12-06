@@ -1,10 +1,10 @@
 # Personal Portfolio landing page
 
-## [Check out the project on Vercel](https://portfolio-page-8x3v-hi4hk8i2u-anastasiiauferova.vercel.app)
+## [Check out the project on Vercel](https://portfolio-page-8x3v.vercel.app)
 
 ## Description
 
-This project is an nteractive gallery where users can share photos. This is a student project created during multiple sprints (4-9 sprints) of a web development course of Yandex Practicum. Trhoughtout these sprints, different layers of functionality were added to the project. The main concepts and techs I practiced working on the project: advanced features of HTML and CSS, Asynchronous JavaScript, OOP, Fetch API, form data validation. The data is loaded from and onto external API provided by Yandex.
+This project is a portfolio page featuring my main skills, projects and contact information (with contact form).
 
 ## Functionality:
 
