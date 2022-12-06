@@ -21,7 +21,6 @@ const resizeCloudFunction = function() {
 }
 
 
-
 window.addEventListener('resize', () => {
     resizeCloudFunction()
     console.log(resizeCloudFunction())

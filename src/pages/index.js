@@ -1,6 +1,10 @@
 import { initialProjectCards, projectSwiperSelector } from "../utils/constants.js";
 import { ProjectCard } from "../components/projectCard.js";
 import SwiperSection from "../components/swiperSection.js";
+import "../components/cloud";
+import "../css/style.css";
+import PDF from "../assets/Anastasiia_Iuferova_JunFrontendDev.pdf";
+
 
 
 //Constants
@@ -8,6 +12,8 @@ import SwiperSection from "../components/swiperSection.js";
 const headerMenuButton = document.getElementsByClassName("header__menu")[0];
 const headerMenuPopup = document.getElementsByClassName("menu__popup")[0];
 const popupNav = headerMenuPopup.getElementsByTagName("li");
+document.getElementById("pdf-link").href = PDF;
+document.getElementById("pdf-link2").href = PDF;
 
 
 //Functions

@@ -10,7 +10,7 @@
   />
     <title>Anastasiia Portfolio
     </title>
-</head>
+<script defer src="main.js"></script><link href="main.css" rel="stylesheet"></head>
 <body>
 
     <header class="header">
@@ -26,8 +26,8 @@
             </ul>
         </nav>
         <div class="header__buttons">
-            <button class=" header__button header__button_color"></button>
-            <button class="header__button "><a href="./Anastasiia_Iuferova_JunFrontendDev.pdf" class="header__link" download>Resume</a></button>
+            <button class="header__button header__button_color"></button>
+            <button class="header__button "><a id="pdf-link" class="header__link" download>Resume</a></button>
         </div>
 
         <button id="header__menu" class="header__menu">
@@ -45,17 +45,17 @@
                 Passionate about web development and photography.</p>
             <div class="about-me__links">
                 
-                <a href="https://github.com/AnastasiiaUferova"  target="_blank" rel="noopener" class="about-me__link"><img alt="icon GH" class="about-me__link-image"  src="<%=require('./images/Github-grey.svg')%>"></a>
+                <a href="https://github.com/AnastasiiaUferova"  target="_blank" rel="noopener" class="about-me__link"><img alt="icon GH" class="about-me__link-image"  src="da16063b90bd9413a652.svg"></a>
     
                 <a href="https://www.linkedin.com/in/anastasiia-iuferova-frontend-dev/" target="_blank" class="about-me__link">
-                    <img alt="icon LN" class="about-me__link-image" src="<%=require('./images/Linkedin-grey.svg')%>">
+                    <img alt="icon LN" class="about-me__link-image"  src="a6d0e5d9706accf5d72b.svg">
                 </a>
             </div>
         </div>
 
         <div class="about-me__image">
             <div class="about-me__decor"></div>
-            <img src="<%=require('./images/Avatar.jpg')%>" alt="Avatar" class="about-me__image-main">
+            <img  src="46d95a7be594c93cf7e2.jpg" alt="Avatar" class="about-me__image-main">
         </div>
     </section>
 
@@ -130,14 +130,12 @@
 
 <footer class="footer">
     <div>
-    <a href="https://github.com/AnastasiiaUferova"  target="_blank" rel="noopener" class="about-me__link"><img alt="icon GH" class="about-me__link-image" src="<%=require('./images/Github-grey.svg')%>"></a>
+    <a href="https://github.com/AnastasiiaUferova"  target="_blank" rel="noopener" class="about-me__link"><img alt="icon GH" class="about-me__link-image"  src="da16063b90bd9413a652.svg"></a>
     
     <a href="https://www.linkedin.com/in/anastasiia-iuferova-frontend-dev/" target="_blank" class="about-me__link">
-        <img alt="icon LN" class="about-me__link-image" src="<%=require('./images/Linkedin-grey.svg')%>"">
+        <img alt="icon LN" class="about-me__link-image"  src="a6d0e5d9706accf5d72b.svg">
     </a>
 </div>
-
-
 
 </footer>
  </body>
@@ -175,17 +173,12 @@
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-            <button class="menu__popup_button"><a href="./Anastasiia_Iuferova_JunFrontendDev.pdf" class="header__link" download>Resume</a></button>
+            <button class="menu__popup_button"><a href="./Anastasiia_Iuferova_JunFrontendDev.pdf" id="pdf-link2" class="header__link" download>Resume</a></button>
         </nav>
     </section>
 
-
-
-
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"></script>
-    <script type="module" src="./components/cloud.js"></script>
-    <script type="module" src="./src/index.js"></script>
 
 </main>
 </body>
