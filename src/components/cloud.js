@@ -5,7 +5,7 @@ const myTags = [
     'React.js',
     'express.js', 'git',
     'Node.js', 'Figma',
-    'SASS', 'MongoDB', 'WebPack', 'REST API', "responsive", "VSCode", "English", "npm", "React Router", "CRUD"
+    'SASS', 'MongoDB', 'WebPack', 'REST API', "responsive", "VSCode", "English", "Vercel", "npm", "React Router", "CRUD"
 ];
 
 
