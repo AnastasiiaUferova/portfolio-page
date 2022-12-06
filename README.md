@@ -1,6 +1,6 @@
 # Personal Portfolio landing page
 
-## [Check out the project on Vercel](https://portfolio-page-8x3v.vercel.app/)
+## [Check out the project on Vercel](https://portfolio-page-8x3v-hi4hk8i2u-anastasiiauferova.vercel.app)
 
 ## Description
 
