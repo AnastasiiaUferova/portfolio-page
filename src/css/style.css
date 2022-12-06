@@ -159,17 +159,20 @@ h1 {
   .header__button:nth-of-type(1) {
     margin-right: 0;
   }
+
   .header__buttons {
     margin-right: 0;
   }
+
   .header__menu {
     display: block;
     background-color: transparent;
-    width: 25px;
+    width: 30px;
     height: 30px;
     cursor: pointer;
     margin-left: 10px;
     z-index: 2;
+    padding: 3px;
   }
   .header__menu div {
     background-color: #F1F1F1;
@@ -356,6 +359,7 @@ h1 {
   .about-me__image {
     width: 60vw;
     height: 250px;
+    margin-top: 40px;
   }
   .about-me__decor {
     height: 250px;
