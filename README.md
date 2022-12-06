@@ -1,6 +1,6 @@
 # Personal Portfolio landing page
 
-## [Check out the project on GitHubPages](https://anastasiiauferova.github.io/mesto/)
+## [Check out the project on Vercel](https://portfolio-page-8x3v.vercel.app/)
 
 ## Description
 
