@@ -3,6 +3,7 @@ const HowToLearn = new URL('../images/HowToLearn.png', import.meta.url);
 const Films = new URL('../images/Films.png', import.meta.url);
 const Mesto = new URL('../images/Mesto.png', import.meta.url);
 const ToDo = new URL('../images/ToDo.png', import.meta.url);
+const Pomodoro = new URL('../images/Pomodoro.png', import.meta.url);
 
 const initialProjectCards = [
 
@@ -29,6 +30,14 @@ const initialProjectCards = [
         repoLink: "https://github.com/AnastasiiaUferova/film-search",
         webLink: "https://anastasiiauferova.github.io/film-search/#/movies", 
         imgLink: Films,
+      },
+
+      {
+        header: "Pomodoro App",  
+        techs: "React.js, JS, SCSS",
+        repoLink: "https://github.com/AnastasiiaUferova/pomodoro",
+        webLink: "https://pomodoro-anastasiiauferova.vercel.app", 
+        imgLink: Pomodoro,
       },
 
       {
