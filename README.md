@@ -1,6 +1,6 @@
 # Personal Portfolio landing page
 
-## [Check out the project on Vercel](https://portfolio-page-8x3v.vercel.app)
+## [Check out the project on Vercel](https://anastasiiaiuferova-portfolio.vercel.app)
 
 ## Description
 
@@ -11,7 +11,7 @@ This project is a portfolio page featuring my main skills, projects and contact 
 * Download Resume;
 * Send message to email via contact form;
 * Go through projects using swiper;
-* Links to websites and repositories of the rpojects
+* Links to websites and repositories of the projects.
 
 
 ## Technologies:
