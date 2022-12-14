@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+  />
+    <title>Anastasiia Portfolio
+    </title>
+<script defer src="main.js"></script><link href="main.css" rel="stylesheet"></head>
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <p>ANASTASIIA</p>
+        </div>
+        <nav class="header__nav">
+            <ul>
+                <li><a href="#me">About me</a></li>
+                <li class="header__nav-item"><a href="#skills">Skills</a></li>
+                <li class="header__nav-item"><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header__buttons">
+            <button class="header__button header__button_color"></button>
+            <button class="header__button "><a id="pdf-link" class="header__link" download>Resume</a></button>
+        </div>
+
+        <button id="header__menu" class="header__menu">
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="three"></div>
+        </button>
+    </header>
+    <main>
+    <section id="me" class="about-me">
+        <div class="about-me__content">
+            <h3 class="sub-heading">My name is</h3>
+            <h1>Anastasiia</h1>
+            <p>Creative junior front-end developer with more than 1 year of studying + pet projects experience. Previously, worked in marketing and SMM for several years. Familiar with both front-end and backend technologies. 
+                Passionate about web development and photography.</p>
+            <div class="about-me__links">
+                
+                <a href="https://github.com/AnastasiiaUferova"  target="_blank" rel="noopener" class="about-me__link"><img alt="icon GH" class="about-me__link-image"  src="da16063b90bd9413a652.svg"></a>
+    
+                <a href="https://www.linkedin.com/in/anastasiia-iuferova-frontend-dev/" target="_blank" class="about-me__link">
+                    <img alt="icon LN" class="about-me__link-image"  src="a6d0e5d9706accf5d72b.svg">
+                </a>
+            </div>
+        </div>
+
+        <div class="about-me__image">
+            <div class="about-me__decor"></div>
+            <img  src="46d95a7be594c93cf7e2.jpg" alt="Avatar" class="about-me__image-main">
+        </div>
+    </section>
+
+
+    <section id="skills" class="about-me">
+        <span class="cloud"></span>
+        <div class="about-me__content">
+            <h3 class="sub-heading">Skills</h3>
+            <h2>Main Techs <span style="color:#7E74F1">&</span> Skills</h2>
+            <p>Here are the main skills I've aquired so far from courses (Yandex.Practicum, Freecodecamp, Udemy), YouTube videos 
+                (Programming with Mosh, Web Dev Simplified, Kevin Powell, Traversy Media) and documentation platforms (MDN Web Docs, W3schools.com).
+            </p>
+        </div>
+    </section>
+
+    <section id="projects" class="about-me">
+        <div class="about-me__content">
+            <h3 class="sub-heading">Projects</h3>
+            <h2>My Featured <span style="color:#7E74F1">Projects</span></h2>
+            <p>Here are my educational projects from courses and my pet projects.
+            </p>
+        </div>
+
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+    </section>
+    
+
+<section id="contact" class="about-me">
+<div class="about-me__content">
+    <h3 class="sub-heading">Contact</h3>
+    <h2>Contact <span style="color:#7E74F1">Me</span></h2>
+</div>
+<div class="all-contacts">
+    <div class="form-container">
+        <form  action="https://formspree.io/f/mqkjvnjw"
+        method="POST" id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/{form_id}" method="post">
+            <fieldset id="fs-frm-inputs">
+              <input type="text" name="name" id="full-name" placeholder="Name" required="">
+              <input type="email" name="_replyto" id="email-address" placeholder="Email" required="">
+              <textarea rows="5" name="message" id="message" placeholder="Message" required=""></textarea>
+              <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+            </fieldset>
+            <input  class="submit" type="submit" value="Submit">
+          </form>
+    </div>
+    <div class="contact-info">
+
+        <div class="info-container">
+            <h4>Email</h4>
+            <p class="info-content">anastasiia.iuferova@gmail.com</p>
+        </div>
+
+        <div class="info-container">
+            <h4>Phone number</h4>
+            <p class="info-content">+48 501 067 105</p>
+        </div>
+
+        <div class="info-container">
+            <h4>Address</h4>
+            <p class="info-content">Warsaw, Grzybowska</p>
+        </div>
+    </div>
+</div>
+</section>
+
+</main>
+
+<footer class="footer">
+    <div>
+    <a href="https://github.com/AnastasiiaUferova"  target="_blank" rel="noopener" class="about-me__link"><img alt="icon GH" class="about-me__link-image"  src="da16063b90bd9413a652.svg"></a>
+    
+    <a href="https://www.linkedin.com/in/anastasiia-iuferova-frontend-dev/" target="_blank" class="about-me__link">
+        <img alt="icon LN" class="about-me__link-image"  src="a6d0e5d9706accf5d72b.svg">
+    </a>
+</div>
+
+</footer>
+ </body>
+ 
+   
+
+    <template class="project-card-template">
+        <div class="swiper-slide">
+        <div class="slide-image-container">
+            <img src="" alt="" class="slide-image">
+            <div class="slide-image-overlay" ></div>
+        </div>
+            <div class="slide-content">
+             <h4 class="slide-header">Website</h4>
+             <div class="slide-info">
+                 <p class="slide-techs"></p>
+                 <div class="slide-link-container">
+                 <a href="" target="_blank" class="slide__link_repo">
+                 </a>
+                 <a href="" target="_blank" class="slide__link_web">
+                   
+                 </a>
+                </div>
+            </div>
+    
+           </div>
+      </template>
+
+
+    <section class="menu__popup">
+        <nav>
+            <ul>
+                <li><a href="#me">About me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="menu__popup_button"><a href="./Anastasiia_Iuferova_JunFrontendDev.pdf" id="pdf-link2" class="header__link" download>Resume</a></button>
+        </nav>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"></script>
+
+</main>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
